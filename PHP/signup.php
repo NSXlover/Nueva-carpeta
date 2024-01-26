@@ -51,4 +51,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //Close the database connection
         $conn->close();
     }
+} else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+    echo 'Hola, es con get';
 }
